@@ -59,7 +59,7 @@ def check_if_passed(plt, x, y, argument):
         label = ''
 
     if math.pow((x[-1] - c[0]), 2) + math.pow((y[-1] - c[1]), 2) <= math.pow(c[2], 2):
-        if mistakes:
+        if not mistakes:
             return True
     return False
 
